@@ -57,10 +57,18 @@
                                                     <constraint firstAttribute="height" constant="90" id="r7h-S5-6gI"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Volkswagen becomes the second non-American automobile manufacturer to open a plant in the US - 1978">
+                                                    <fragment content="Cameroon becomes the first African nation to advanse to the FIFA World Cup quater finals - 1990">
                                                         <attributes>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.016968886379999999" green="0.17643138529999999" blue="0.3432939404" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="27.149999618530273">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -100,10 +108,18 @@
                                                     <constraint firstAttribute="width" constant="260" id="5zx-tX-mrl"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Volkswagen becomes the second non-American automobile manufacturer to open a plant in the US - 1978">
+                                                    <fragment content="Cameroon becomes the first African nation to advanse to the FIFA World Cup quater finals - 1990">
                                                         <attributes>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.016969999999999999" green="0.17643" blue="0.34328999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="27.149999618530273">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -158,10 +174,18 @@
                                                     <constraint firstAttribute="height" constant="90" id="iS3-gy-Lh5"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Volkswagen becomes the second non-American automobile manufacturer to open a plant in the US - 1978">
+                                                    <fragment content="Cameroon becomes the first African nation to advanse to the FIFA World Cup quater finals - 1990">
                                                         <attributes>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.016969999999999999" green="0.17643" blue="0.34328999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="27.149999618530273">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
@@ -216,10 +240,18 @@
                                                     <constraint firstAttribute="height" constant="90" id="wHg-Jv-Q4Z"/>
                                                 </constraints>
                                                 <attributedString key="attributedText">
-                                                    <fragment content="Volkswagen becomes the second non-American automobile manufacturer to open a plant in the US - 1978">
+                                                    <fragment content="Cameroon becomes the first African nation to advanse to the FIFA World Cup quater finals - 1990">
                                                         <attributes>
-                                                            <font key="NSFont" metaFont="system" size="17"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="rightToLeft" tighteningFactorForTruncation="0.0"/>
+                                                            <color key="NSBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="NSColor" red="0.016969999999999999" green="0.17643" blue="0.34328999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <font key="NSFont" size="12" name="Menlo-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="27.149999999999999" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                                <tabStops>
+                                                                    <textTab alignment="left" location="27.149999618530273">
+                                                                        <options/>
+                                                                    </textTab>
+                                                                </tabStops>
+                                                            </paragraphStyle>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>

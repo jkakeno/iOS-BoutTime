@@ -17,8 +17,7 @@ class EventListViewController: UIViewController {
     
     var roundCount = 0
     var correctCount = 0
-    var displayedEventList:[String] = []
-    var referenceEventList:[String] = []
+    var displayedEventList:[Event] = []
     var eventListProvider: EventListProvider = EventListProvider()
     var time = 60
     var timer:Timer?
@@ -79,11 +78,6 @@ class EventListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        do{
-            try eventListProvider.loadEventList(fromFile: "EventList", ofType: "plist")
-        }catch let error{
-            fatalError("\(error)")
-        }
 
         loadEvents()
         displayEvents()
@@ -138,14 +132,10 @@ class EventListViewController: UIViewController {
         resetTimer()
         //Hide next round button.
         nextRoundButton.isHidden=true
-        //Clear displayEventList and referenceEventList.
+        //Clear displayEventList.
         displayedEventList.removeAll()
-        referenceEventList.removeAll()
-        //Get the unsorted and sorted list of events.
+        //Get the list of selected events.
         displayedEventList = eventListProvider.getEventList()
-        referenceEventList = eventListProvider.getSortedEventList()
-        print(displayedEventList)
-        print(referenceEventList)
         //Start timer
         timer=Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
@@ -177,10 +167,10 @@ class EventListViewController: UIViewController {
     }
     
     func displayEvents(){
-        eventOneLabel.text = displayedEventList[0]
-        eventTwoLabel.text = displayedEventList[1]
-        eventThreeLabel.text = displayedEventList[2]
-        eventFourLabel.text = displayedEventList[3]
+        eventOneLabel.text = displayedEventList[0].description
+        eventTwoLabel.text = displayedEventList[1].description
+        eventThreeLabel.text = displayedEventList[2].description
+        eventFourLabel.text = displayedEventList[3].description
     }
     
     //Become first responder to get shake motion
@@ -201,22 +191,25 @@ class EventListViewController: UIViewController {
     
     func checkAnswer(){
         stopTimer()
-        if displayedEventList == referenceEventList{
-            print("Good")
-            //Show button image
-            showNextRoundButton(forImage: "next_round_success")
-            correctCount += defaultValues.one.rawValue
-            roundCount += defaultValues.one.rawValue
-            print("Round count is: \(roundCount)")
-            checkRoundCount()
-            playSound(resource: "CorrectDing", type: "wav")
-        }else{
-            print("No Good")
-            showNextRoundButton(forImage: "next_round_fail")
-            roundCount += defaultValues.one.rawValue
-            print("Round count is: \(roundCount)")
-            checkRoundCount()
-            playSound(resource: "IncorrectBuzz", type: "wav")
+        if let date1 = displayedEventList[0].date, let date2 = displayedEventList[1].date, let date3 = displayedEventList[2].date, let date4 = displayedEventList[3].date {
+            //Check that the date of events are in accending order.
+            if date1<date2 && date2<date3 && date3<date4 {
+                print("Good")
+                //Show button image
+                showNextRoundButton(forImage: "next_round_success")
+                correctCount += defaultValues.one.rawValue
+                roundCount += defaultValues.one.rawValue
+                print("Round count is: \(roundCount)")
+                checkRoundCount()
+                playSound(resource: "CorrectDing", type: "wav")
+            } else {
+                print("No Good")
+                showNextRoundButton(forImage: "next_round_fail")
+                roundCount += defaultValues.one.rawValue
+                print("Round count is: \(roundCount)")
+                checkRoundCount()
+                playSound(resource: "IncorrectBuzz", type: "wav")
+            }
         }
     }
     
